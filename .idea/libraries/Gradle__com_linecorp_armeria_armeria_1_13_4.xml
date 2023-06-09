@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linecorp.armeria:armeria:1.13.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linecorp.armeria/armeria/1.13.4/43157a38a05e67db23868ea0511ca8bb12624e7f/armeria-1.13.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linecorp.armeria/armeria/1.13.4/b13a8ccfed25813e0d52c57ce4ea9871014108e2/armeria-1.13.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

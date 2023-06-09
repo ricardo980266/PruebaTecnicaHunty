@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"AutomationApis\/AutomationApis[1.1:21]","start":1686328156676,"end":1686328158170,"title":"AutomationApis\/AutomationApis[1.1:21] 11:29:16.676-11:29:18.170 Generate token"},{"id":2,"group":2,"content":"AutomationApis\/AutomationApis[2:24]","start":1686328156675,"end":1686328158267,"title":"AutomationApis\/AutomationApis[2:24] 11:29:16.675-11:29:18.267 Get booking information"},{"id":3,"group":3,"content":"AutomationApis\/AutomationApis[3:31]","start":1686328156675,"end":1686328158159,"title":"AutomationApis\/AutomationApis[3:31] 11:29:16.675-11:29:18.159 Succes get user for id","className":"failed"},{"id":4,"group":4,"content":"AutomationApis\/AutomationApis[4:37]","start":1686328156675,"end":1686328158191,"title":"AutomationApis\/AutomationApis[4:37] 11:29:16.675-11:29:18.191 User not found for id","className":"failed"},{"id":5,"group":3,"content":"AutomationApis\/AutomationApis[5.1:51]","start":1686328158165,"end":1686328158487,"title":"AutomationApis\/AutomationApis[5.1:51] 11:29:18.165-11:29:18.487 Create booking","className":"failed"},{"id":6,"group":1,"content":"AutomationApis\/AutomationApis[6.1:66]","start":1686328158177,"end":1686328158501,"title":"AutomationApis\/AutomationApis[6.1:66] 11:29:18.177-11:29:18.501 Update booking booking","className":"failed"},{"id":7,"group":4,"content":"AutomationApis\/AutomationApis[7:68]","start":1686328158197,"end":1686328158207,"title":"AutomationApis\/AutomationApis[7:68] 11:29:18.197-11:29:18.207 Succes delete","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

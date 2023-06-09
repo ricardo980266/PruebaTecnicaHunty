@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.intuit.karate:karate-junit5:1.2.1.RC2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.intuit.karate/karate-junit5/1.2.1.RC2/ac4d53e5aca34204a345a7f3fa21c6abfdeda066/karate-junit5-1.2.1.RC2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.intuit.karate/karate-junit5/1.2.1.RC2/f06673726b2cb216a379dd2cf3bb7dabee45b20e/karate-junit5-1.2.1.RC2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

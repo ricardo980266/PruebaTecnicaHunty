@@ -1,0 +1,10 @@
+{
+  "firstname": "Susan",
+  "lastname": "Jones",
+  "totalprice": 413,
+  "depositpaid": false,
+  "bookingdates": {
+    "checkin": "2022-04-11",
+    "checkout": "2022-12-22"
+  }
+}

@@ -1,0 +1,17 @@
+APIs Automation Karate Framework
+
+Open the AutomationApisRunner.java and run.
+
+The project works by sending a request to an end point which requires a body to be sent or only an id depends on the type of service
+to be able to consume the service correctly,
+Additional must specify the type of method that we are going to consume and requires an expected result that in our case would be the status 200 which means that
+the API responded correctly and a match is made to verify that the API response is what we expected.
+
+As a point of improvement, the architecture of the APis can be modified to respond faster.
+
+
+
+#Especificaciones
+Java version 17.0.6
+Maven
+JUnit version 5.2.1

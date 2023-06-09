@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: de.siegmar:fastcsv:2.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.siegmar/fastcsv/2.0.0/b615f26c03edeac966618b93b9ee4f4eed50aae1/fastcsv-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.siegmar/fastcsv/2.0.0/80c2ac0f116666e565c347653c4ba4c3145b33b9/fastcsv-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

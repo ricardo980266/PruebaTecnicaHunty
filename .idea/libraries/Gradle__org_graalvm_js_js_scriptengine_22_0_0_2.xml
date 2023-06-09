@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.graalvm.js:js-scriptengine:22.0.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.graalvm.js/js-scriptengine/22.0.0.2/d1897f2b0b4c93d79a6267498fd43af7e2be824f/js-scriptengine-22.0.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.graalvm.js/js-scriptengine/22.0.0.2/8d7917fba0464a7a907e0cf4acfb606bc6a5911b/js-scriptengine-22.0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

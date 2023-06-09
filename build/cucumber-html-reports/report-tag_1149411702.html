@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @Automation</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>automatizacion</td>
+      <td>09 jun 2023, 11:33</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Automation</td>
+          <td      class="passed"    >24</td>
+          <td      class="failed"    >6</td>
+          <td     class="skipped"   >4</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">34</td>
+
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >6</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="5732198900">5.732</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2498060278.html">AutomationApis/AutomationApis.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1149411702.html">@Automation</a>
+</div>
+
+
+  <span class="lead-duration duration">1.060</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Generate token</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com/auth&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request posToken</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>11:33:32.898 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+11:33:33.620 response time in milliseconds: 718
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-/WLJvE4DQsG5wVehRKNE1oSBFoI&quot;
+1 &lt; Date: Fri, 09 Jun 2023 16:33:31 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;c2cdb92a7fdf7dd&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match  $ == succesFullToken</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2498060278.html">AutomationApis/AutomationApis.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1149411702.html">@Automation</a>
+</div>
+
+
+  <span class="lead-duration duration">1.069</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get booking information</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com/booking&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>11:33:32.898 request:
+1 &gt; GET https://restful-booker.herokuapp.com/booking
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:33:33.622 response time in milliseconds: 724
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 10637
+1 &lt; Etag: W/&quot;298d-M6Q1b7JCezCkn9aiNsBldi9XjSA&quot;
+1 &lt; Date: Fri, 09 Jun 2023 16:33:31 GMT
+1 &lt; Via: 1.1 vegur
+[{&quot;bookingid&quot;:664},{&quot;bookingid&quot;:69},{&quot;bookingid&quot;:308},{&quot;bookingid&quot;:306},{&quot;bookingid&quot;:102},{&quot;bookingid&quot;:115},{&quot;bookingid&quot;:651},{&quot;bookingid&quot;:283},{&quot;bookingid&quot;:261},{&quot;bookingid&quot;:733},{&quot;bookingid&quot;:728},{&quot;bookingid&quot;:591},{&quot;bookingid&quot;:594},{&quot;bookingid&quot;:498},{&quot;bookingid&quot;:499},{&quot;bookingid&quot;:462},{&quot;bookingid&quot;:811},{&quot;bookingid&quot;:284},{&quot;bookingid&quot;:643},{&quot;bookingid&quot;:199},{&quot;bookingid&quot;:5},{&quot;bookingid&quot;:242},{&quot;bookingid&quot;:305},{&quot;bookingid&quot;:551},{&quot;bookingid&quot;:185},{&quot;bookingid&quot;:641},{&quot;bookingid&quot;:511},{&quot;bookingid&quot;:638},{&quot;bookingid&quot;:287},{&quot;bookingid&quot;:54},{&quot;bookingid&quot;:323},{&quot;bookingid&quot;:553},{&quot;bookingid&quot;:251},{&quot;bookingid&quot;:621},{&quot;bookingid&quot;:241},{&quot;bookingid&quot;:736},{&quot;bookingid&quot;:675},{&quot;bookingid&quot;:778},{&quot;bookingid&quot;:768},{&quot;bookingid&quot;:81},{&quot;bookingid&quot;:93},{&quot;bookingid&quot;:253},{&quot;bookingid&quot;:234},{&quot;bookingid&quot;:645},{&quot;bookingid&quot;:71},{&quot;bookingid&quot;:19},{&quot;bookingid&quot;:76},{&quot;bookingid&quot;:668},{&quot;bookingid&quot;:542},{&quot;bookingid&quot;:653},{&quot;bookingid&quot;:765},{&quot;bookingid&quot;:706},{&quot;bookingid&quot;:254},{&quot;bookingid&quot;:92},{&quot;bookingid&quot;:678},{&quot;bookingid&quot;:457},{&quot;bookingid&quot;:147},{&quot;bookingid&quot;:463},{&quot;bookingid&quot;:137},{&quot;bookingid&quot;:48},{&quot;bookingid&quot;:218},{&quot;bookingid&quot;:72},{&quot;bookingid&quot;:59},{&quot;bookingid&quot;:151},{&quot;bookingid&quot;:744},{&quot;bookingid&quot;:545},{&quot;bookingid&quot;:503},{&quot;bookingid&quot;:559},{&quot;bookingid&quot;:289},{&quot;bookingid&quot;:601},{&quot;bookingid&quot;:97},{&quot;bookingid&quot;:159},{&quot;bookingid&quot;:174},{&quot;bookingid&quot;:98},{&quot;bookingid&quot;:661},{&quot;bookingid&quot;:425},{&quot;bookingid&quot;:239},{&quot;bookingid&quot;:669},{&quot;bookingid&quot;:565},{&quot;bookingid&quot;:339},{&quot;bookingid&quot;:399},{&quot;bookingid&quot;:822},{&quot;bookingid&quot;:421},{&quot;bookingid&quot;:606},{&quot;bookingid&quot;:366},{&quot;bookingid&quot;:539},{&quot;bookingid&quot;:610},{&quot;bookingid&quot;:204},{&quot;bookingid&quot;:534},{&quot;bookingid&quot;:342},{&quot;bookingid&quot;:656},{&quot;bookingid&quot;:555},{&quot;bookingid&quot;:520},{&quot;bookingid&quot;:55},{&quot;bookingid&quot;:782},{&quot;bookingid&quot;:699},{&quot;bookingid&quot;:450},{&quot;bookingid&quot;:428},{&quot;bookingid&quot;:65},{&quot;bookingid&quot;:698},{&quot;bookingid&quot;:688},{&quot;bookingid&quot;:691},{&quot;bookingid&quot;:721},{&quot;bookingid&quot;:205},{&quot;bookingid&quot;:215},{&quot;bookingid&quot;:505},{&quot;bookingid&quot;:751},{&quot;bookingid&quot;:317},{&quot;bookingid&quot;:806},{&quot;bookingid&quot;:843},{&quot;bookingid&quot;:63},{&quot;bookingid&quot;:223},{&quot;bookingid&quot;:328},{&quot;bookingid&quot;:387},{&quot;bookingid&quot;:309},{&quot;bookingid&quot;:376},{&quot;bookingid&quot;:512},{&quot;bookingid&quot;:99},{&quot;bookingid&quot;:746},{&quot;bookingid&quot;:390},{&quot;bookingid&quot;:272},{&quot;bookingid&quot;:143},{&quot;bookingid&quot;:603},{&quot;bookingid&quot;:168},{&quot;bookingid&quot;:236},{&quot;bookingid&quot;:764},{&quot;bookingid&quot;:374},{&quot;bookingid&quot;:335},{&quot;bookingid&quot;:458},{&quot;bookingid&quot;:212},{&quot;bookingid&quot;:361},{&quot;bookingid&quot;:440},{&quot;bookingid&quot;:267},{&quot;bookingid&quot;:430},{&quot;bookingid&quot;:123},{&quot;bookingid&quot;:11},{&quot;bookingid&quot;:804},{&quot;bookingid&quot;:496},{&quot;bookingid&quot;:377},{&quot;bookingid&quot;:769},{&quot;bookingid&quot;:156},{&quot;bookingid&quot;:150},{&quot;bookingid&quot;:684},{&quot;bookingid&quot;:632},{&quot;bookingid&quot;:380},{&quot;bookingid&quot;:677},{&quot;bookingid&quot;:824},{&quot;bookingid&quot;:153},{&quot;bookingid&quot;:389},{&quot;bookingid&quot;:468},{&quot;bookingid&quot;:735},{&quot;bookingid&quot;:360},{&quot;bookingid&quot;:786},{&quot;bookingid&quot;:235},{&quot;bookingid&quot;:333},{&quot;bookingid&quot;:321},{&quot;bookingid&quot;:6},{&quot;bookingid&quot;:636},{&quot;bookingid&quot;:293},{&quot;bookingid&quot;:326},{&quot;bookingid&quot;:170},{&quot;bookingid&quot;:550},{&quot;bookingid&quot;:332},{&quot;bookingid&quot;:47},{&quot;bookingid&quot;:126},{&quot;bookingid&quot;:119},{&quot;bookingid&quot;:8},{&quot;bookingid&quot;:276},{&quot;bookingid&quot;:445},{&quot;bookingid&quot;:660},{&quot;bookingid&quot;:290},{&quot;bookingid&quot;:297},{&quot;bookingid&quot;:831},{&quot;bookingid&quot;:575},{&quot;bookingid&quot;:566},{&quot;bookingid&quot;:4},{&quot;bookingid&quot;:94},{&quot;bookingid&quot;:548},{&quot;bookingid&quot;:605},{&quot;bookingid&quot;:471},{&quot;bookingid&quot;:62},{&quot;bookingid&quot;:157},{&quot;bookingid&quot;:220},{&quot;bookingid&quot;:694},{&quot;bookingid&quot;:666},{&quot;bookingid&quot;:826},{&quot;bookingid&quot;:777},{&quot;bookingid&quot;:712},{&quot;bookingid&quot;:388},{&quot;bookingid&quot;:540},{&quot;bookingid&quot;:707},{&quot;bookingid&quot;:647},{&quot;bookingid&quot;:762},{&quot;bookingid&quot;:642},{&quot;bookingid&quot;:568},{&quot;bookingid&quot;:827},{&quot;bookingid&quot;:620},{&quot;bookingid&quot;:134},{&quot;bookingid&quot;:275},{&quot;bookingid&quot;:487},{&quot;bookingid&quot;:652},{&quot;bookingid&quot;:373},{&quot;bookingid&quot;:752},{&quot;bookingid&quot;:122},{&quot;bookingid&quot;:39},{&quot;bookingid&quot;:650},{&quot;bookingid&quot;:128},{&quot;bookingid&quot;:845},{&quot;bookingid&quot;:352},{&quot;bookingid&quot;:597},{&quot;bookingid&quot;:696},{&quot;bookingid&quot;:52},{&quot;bookingid&quot;:110},{&quot;bookingid&quot;:474},{&quot;bookingid&quot;:158},{&quot;bookingid&quot;:257},{&quot;bookingid&quot;:129},{&quot;bookingid&quot;:3},{&quot;bookingid&quot;:106},{&quot;bookingid&quot;:524},{&quot;bookingid&quot;:508},{&quot;bookingid&quot;:469},{&quot;bookingid&quot;:453},{&quot;bookingid&quot;:182},{&quot;bookingid&quot;:32},{&quot;bookingid&quot;:66},{&quot;bookingid&quot;:419},{&quot;bookingid&quot;:243},{&quot;bookingid&quot;:557},{&quot;bookingid&quot;:404},{&quot;bookingid&quot;:21},{&quot;bookingid&quot;:726},{&quot;bookingid&quot;:362},{&quot;bookingid&quot;:31},{&quot;bookingid&quot;:86},{&quot;bookingid&quot;:101},{&quot;bookingid&quot;:46},{&quot;bookingid&quot;:793},{&quot;bookingid&quot;:787},{&quot;bookingid&quot;:441},{&quot;bookingid&quot;:711},{&quot;bookingid&quot;:319},{&quot;bookingid&quot;:118},{&quot;bookingid&quot;:278},{&quot;bookingid&quot;:830},{&quot;bookingid&quot;:146},{&quot;bookingid&quot;:685},{&quot;bookingid&quot;:183},{&quot;bookingid&quot;:229},{&quot;bookingid&quot;:657},{&quot;bookingid&quot;:577},{&quot;bookingid&quot;:300},{&quot;bookingid&quot;:564},{&quot;bookingid&quot;:544},{&quot;bookingid&quot;:549},{&quot;bookingid&quot;:299},{&quot;bookingid&quot;:459},{&quot;bookingid&quot;:177},{&quot;bookingid&quot;:817},{&quot;bookingid&quot;:766},{&quot;bookingid&quot;:400},{&quot;bookingid&quot;:85},{&quot;bookingid&quot;:579},{&quot;bookingid&quot;:227},{&quot;bookingid&quot;:523},{&quot;bookingid&quot;:716},{&quot;bookingid&quot;:795},{&quot;bookingid&quot;:779},{&quot;bookingid&quot;:571},{&quot;bookingid&quot;:228},{&quot;bookingid&quot;:466},{&quot;bookingid&quot;:629},{&quot;bookingid&quot;:294},{&quot;bookingid&quot;:162},{&quot;bookingid&quot;:51},{&quot;bookingid&quot;:288},{&quot;bookingid&quot;:417},{&quot;bookingid&quot;:427},{&quot;bookingid&quot;:43},{&quot;bookingid&quot;:225},{&quot;bookingid&quot;:175},{&quot;bookingid&quot;:198},{&quot;bookingid&quot;:488},{&quot;bookingid&quot;:27},{&quot;bookingid&quot;:622},{&quot;bookingid&quot;:478},{&quot;bookingid&quot;:41},{&quot;bookingid&quot;:383},{&quot;bookingid&quot;:33},{&quot;bookingid&quot;:14},{&quot;bookingid&quot;:139},{&quot;bookingid&quot;:438},{&quot;bookingid&quot;:615},{&quot;bookingid&quot;:22},{&quot;bookingid&quot;:628},{&quot;bookingid&quot;:709},{&quot;bookingid&quot;:35},{&quot;bookingid&quot;:268},{&quot;bookingid&quot;:192},{&quot;bookingid&quot;:608},{&quot;bookingid&quot;:792},{&quot;bookingid&quot;:348},{&quot;bookingid&quot;:593},{&quot;bookingid&quot;:202},{&quot;bookingid&quot;:56},{&quot;bookingid&quot;:15},{&quot;bookingid&quot;:346},{&quot;bookingid&quot;:91},{&quot;bookingid&quot;:124},{&quot;bookingid&quot;:82},{&quot;bookingid&quot;:324},{&quot;bookingid&quot;:145},{&quot;bookingid&quot;:109},{&quot;bookingid&quot;:18},{&quot;bookingid&quot;:274},{&quot;bookingid&quot;:483},{&quot;bookingid&quot;:761},{&quot;bookingid&quot;:382},{&quot;bookingid&quot;:452},{&quot;bookingid&quot;:7},{&quot;bookingid&quot;:398},{&quot;bookingid&quot;:314},{&quot;bookingid&quot;:437},{&quot;bookingid&quot;:521},{&quot;bookingid&quot;:832},{&quot;bookingid&quot;:318},{&quot;bookingid&quot;:193},{&quot;bookingid&quot;:701},{&quot;bookingid&quot;:491},{&quot;bookingid&quot;:776},{&quot;bookingid&quot;:87},{&quot;bookingid&quot;:50},{&quot;bookingid&quot;:522},{&quot;bookingid&quot;:714},{&quot;bookingid&quot;:682},{&quot;bookingid&quot;:767},{&quot;bookingid&quot;:370},{&quot;bookingid&quot;:108},{&quot;bookingid&quot;:755},{&quot;bookingid&quot;:312},{&quot;bookingid&quot;:209},{&quot;bookingid&quot;:554},{&quot;bookingid&quot;:759},{&quot;bookingid&quot;:819},{&quot;bookingid&quot;:17},{&quot;bookingid&quot;:648},{&quot;bookingid&quot;:416},{&quot;bookingid&quot;:536},{&quot;bookingid&quot;:28},{&quot;bookingid&quot;:760},{&quot;bookingid&quot;:163},{&quot;bookingid&quot;:406},{&quot;bookingid&quot;:743},{&quot;bookingid&quot;:167},{&quot;bookingid&quot;:429},{&quot;bookingid&quot;:515},{&quot;bookingid&quot;:734},{&quot;bookingid&quot;:142},{&quot;bookingid&quot;:172},{&quot;bookingid&quot;:825},{&quot;bookingid&quot;:111},{&quot;bookingid&quot;:785},{&quot;bookingid&quot;:722},{&quot;bookingid&quot;:671},{&quot;bookingid&quot;:88},{&quot;bookingid&quot;:705},{&quot;bookingid&quot;:301},{&quot;bookingid&quot;:197},{&quot;bookingid&quot;:480},{&quot;bookingid&quot;:783},{&quot;bookingid&quot;:303},{&quot;bookingid&quot;:473},{&quot;bookingid&quot;:588},{&quot;bookingid&quot;:248},{&quot;bookingid&quot;:509},{&quot;bookingid&quot;:747},{&quot;bookingid&quot;:750},{&quot;bookingid&quot;:623},{&quot;bookingid&quot;:700},{&quot;bookingid&quot;:790},{&quot;bookingid&quot;:757},{&quot;bookingid&quot;:737},{&quot;bookingid&quot;:307},{&quot;bookingid&quot;:530},{&quot;bookingid&quot;:396},{&quot;bookingid&quot;:680},{&quot;bookingid&quot;:771},{&quot;bookingid&quot;:809},{&quot;bookingid&quot;:217},{&quot;bookingid&quot;:136},{&quot;bookingid&quot;:180},{&quot;bookingid&quot;:820},{&quot;bookingid&quot;:805},{&quot;bookingid&quot;:344},{&quot;bookingid&quot;:336},{&quot;bookingid&quot;:269},{&quot;bookingid&quot;:665},{&quot;bookingid&quot;:784},{&quot;bookingid&quot;:210},{&quot;bookingid&quot;:238},{&quot;bookingid&quot;:224},{&quot;bookingid&quot;:713},{&quot;bookingid&quot;:367},{&quot;bookingid&quot;:848},{&quot;bookingid&quot;:517},{&quot;bookingid&quot;:262},{&quot;bookingid&quot;:38},{&quot;bookingid&quot;:484},{&quot;bookingid&quot;:537},{&quot;bookingid&quot;:36},{&quot;bookingid&quot;:112},{&quot;bookingid&quot;:796},{&quot;bookingid&quot;:493},{&quot;bookingid&quot;:258},{&quot;bookingid&quot;:718},{&quot;bookingid&quot;:475},{&quot;bookingid&quot;:617},{&quot;bookingid&quot;:600},{&quot;bookingid&quot;:533},{&quot;bookingid&quot;:662},{&quot;bookingid&quot;:526},{&quot;bookingid&quot;:720},{&quot;bookingid&quot;:689},{&quot;bookingid&quot;:833},{&quot;bookingid&quot;:13},{&quot;bookingid&quot;:715},{&quot;bookingid&quot;:794},{&quot;bookingid&quot;:49},{&quot;bookingid&quot;:578},{&quot;bookingid&quot;:587},{&quot;bookingid&quot;:810},{&quot;bookingid&quot;:2},{&quot;bookingid&quot;:173},{&quot;bookingid&quot;:433},{&quot;bookingid&quot;:497},{&quot;bookingid&quot;:613},{&quot;bookingid&quot;:602},{&quot;bookingid&quot;:479},{&quot;bookingid&quot;:16},{&quot;bookingid&quot;:467},{&quot;bookingid&quot;:596},{&quot;bookingid&quot;:330},{&quot;bookingid&quot;:434},{&quot;bookingid&quot;:812},{&quot;bookingid&quot;:191},{&quot;bookingid&quot;:482},{&quot;bookingid&quot;:133},{&quot;bookingid&quot;:266},{&quot;bookingid&quot;:659},{&quot;bookingid&quot;:34},{&quot;bookingid&quot;:573},{&quot;bookingid&quot;:408},{&quot;bookingid&quot;:149},{&quot;bookingid&quot;:581},{&quot;bookingid&quot;:203},{&quot;bookingid&quot;:345},{&quot;bookingid&quot;:244},{&quot;bookingid&quot;:189},{&quot;bookingid&quot;:500},{&quot;bookingid&quot;:45},{&quot;bookingid&quot;:121},{&quot;bookingid&quot;:356},{&quot;bookingid&quot;:725},{&quot;bookingid&quot;:749},{&quot;bookingid&quot;:837},{&quot;bookingid&quot;:599},{&quot;bookingid&quot;:273},{&quot;bookingid&quot;:838},{&quot;bookingid&quot;:372},{&quot;bookingid&quot;:405},{&quot;bookingid&quot;:424},{&quot;bookingid&quot;:233},{&quot;bookingid&quot;:84},{&quot;bookingid&quot;:618},{&quot;bookingid&quot;:252},{&quot;bookingid&quot;:1},{&quot;bookingid&quot;:166},{&quot;bookingid&quot;:415},{&quot;bookingid&quot;:414},{&quot;bookingid&quot;:20},{&quot;bookingid&quot;:58},{&quot;bookingid&quot;:803},{&quot;bookingid&quot;:315},{&quot;bookingid&quot;:281},{&quot;bookingid&quot;:393},{&quot;bookingid&quot;:105},{&quot;bookingid&quot;:77},{&quot;bookingid&quot;:527},{&quot;bookingid&quot;:385},{&quot;bookingid&quot;:773},{&quot;bookingid&quot;:798},{&quot;bookingid&quot;:514},{&quot;bookingid&quot;:67},{&quot;bookingid&quot;:411},{&quot;bookingid&quot;:394},{&quot;bookingid&quot;:353},{&quot;bookingid&quot;:186},{&quot;bookingid&quot;:531},{&quot;bookingid&quot;:816},{&quot;bookingid&quot;:627},{&quot;bookingid&quot;:492},{&quot;bookingid&quot;:461},{&quot;bookingid&quot;:196},{&quot;bookingid&quot;:9},{&quot;bookingid&quot;:439},{&quot;bookingid&quot;:413},{&quot;bookingid&quot;:337},{&quot;bookingid&quot;:448},{&quot;bookingid&quot;:654},{&quot;bookingid&quot;:693},{&quot;bookingid&quot;:12},{&quot;bookingid&quot;:70},{&quot;bookingid&quot;:815},{&quot;bookingid&quot;:670},{&quot;bookingid&quot;:842},{&quot;bookingid&quot;:686},{&quot;bookingid&quot;:635},{&quot;bookingid&quot;:68},{&quot;bookingid&quot;:546},{&quot;bookingid&quot;:364},{&quot;bookingid&quot;:187},{&quot;bookingid&quot;:489},{&quot;bookingid&quot;:327},{&quot;bookingid&quot;:249},{&quot;bookingid&quot;:296},{&quot;bookingid&quot;:446},{&quot;bookingid&quot;:379},{&quot;bookingid&quot;:836},{&quot;bookingid&quot;:340},{&quot;bookingid&quot;:201},{&quot;bookingid&quot;:23},{&quot;bookingid&quot;:26},{&quot;bookingid&quot;:103},{&quot;bookingid&quot;:585},{&quot;bookingid&quot;:355},{&quot;bookingid&quot;:24},{&quot;bookingid&quot;:190},{&quot;bookingid&quot;:40},{&quot;bookingid&quot;:756},{&quot;bookingid&quot;:679},{&quot;bookingid&quot;:343},{&quot;bookingid&quot;:422},{&quot;bookingid&quot;:719},{&quot;bookingid&quot;:584},{&quot;bookingid&quot;:510},{&quot;bookingid&quot;:132},{&quot;bookingid&quot;:60},{&quot;bookingid&quot;:560},{&quot;bookingid&quot;:435},{&quot;bookingid&quot;:42},{&quot;bookingid&quot;:732},{&quot;bookingid&quot;:633},{&quot;bookingid&quot;:504},{&quot;bookingid&quot;:219},{&quot;bookingid&quot;:727},{&quot;bookingid&quot;:195},{&quot;bookingid&quot;:230},{&quot;bookingid&quot;:130},{&quot;bookingid&quot;:639},{&quot;bookingid&quot;:116},{&quot;bookingid&quot;:839},{&quot;bookingid&quot;:354},{&quot;bookingid&quot;:704},{&quot;bookingid&quot;:739},{&quot;bookingid&quot;:155},{&quot;bookingid&quot;:561},{&quot;bookingid&quot;:164},{&quot;bookingid&quot;:44},{&quot;bookingid&quot;:397},{&quot;bookingid&quot;:576},{&quot;bookingid&quot;:179},{&quot;bookingid&quot;:260},{&quot;bookingid&quot;:626},{&quot;bookingid&quot;:351},{&quot;bookingid&quot;:73},{&quot;bookingid&quot;:37},{&quot;bookingid&quot;:282},{&quot;bookingid&quot;:25},{&quot;bookingid&quot;:240},{&quot;bookingid&quot;:674},{&quot;bookingid&quot;:799},{&quot;bookingid&quot;:10},{&quot;bookingid&quot;:138},{&quot;bookingid&quot;:731},{&quot;bookingid&quot;:369},{&quot;bookingid&quot;:589},{&quot;bookingid&quot;:612},{&quot;bookingid&quot;:140},{&quot;bookingid&quot;:412},{&quot;bookingid&quot;:120},{&quot;bookingid&quot;:403},{&quot;bookingid&quot;:447},{&quot;bookingid&quot;:844},{&quot;bookingid&quot;:259},{&quot;bookingid&quot;:570},{&quot;bookingid&quot;:451}]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $okingid[0] == $..bookingid[0]succesfullResponseGet</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
+          <a>js</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: okingid
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;okingid&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:AutomationApis/AutomationApis.feature:28</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>11:33:33.653 classpath:AutomationApis/AutomationApis.feature:28
+And match $okingid[0] == $..bookingid[0]succesfullResponseGet
+js failed:
+&gt;&gt;&gt;&gt;
+01: okingid
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;okingid&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:AutomationApis/AutomationApis.feature:28
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2498060278.html">AutomationApis/AutomationApis.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1149411702.html">@Automation</a>
+</div>
+
+
+  <span class="lead-duration duration">1.044</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Succes get user for id</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com/booking/1&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>11:33:32.898 request:
+1 &gt; GET https://restful-booker.herokuapp.com/booking/1
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:33:33.620 response time in milliseconds: 718
+1 &lt; 418
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 12
+1 &lt; Etag: W/&quot;c-2UDTmC4hdG5PUA+z8oDkrgejuV8&quot;
+1 &lt; Date: Fri, 09 Jun 2023 16:33:31 GMT
+1 &lt; Via: 1.1 vegur
+I'm a Teapot
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>status</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>status code was: 418, expected: 200, response time in milliseconds: 718, url: https://restful-booker.herokuapp.com/booking/1, response: 
+I'm a Teapot
+classpath:AutomationApis/AutomationApis.feature:34</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>11:33:33.626 classpath:AutomationApis/AutomationApis.feature:34
+Then status 200
+status code was: 418, expected: 200, response time in milliseconds: 718, url: https://restful-booker.herokuapp.com/booking/1, response: 
+I'm a Teapot
+classpath:AutomationApis/AutomationApis.feature:34
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == succesBooking</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2498060278.html">AutomationApis/AutomationApis.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1149411702.html">@Automation</a>
+</div>
+
+
+  <span class="lead-duration duration">1.958</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-14">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">User not found for id</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-14" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com/booking/118766&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.952</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>11:33:32.898 request:
+1 &gt; GET https://restful-booker.herokuapp.com/booking/118766
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:33:34.536 response time in milliseconds: 1637
+1 &lt; 404
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 9
+1 &lt; Etag: W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;
+1 &lt; Date: Fri, 09 Jun 2023 16:33:32 GMT
+1 &lt; Via: 1.1 vegur
+Not Found
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == Not found</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+          <a>js</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: Not found
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:4 Expected ; but found found
+Not found
+    ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1898)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:184)
+
+classpath:AutomationApis/AutomationApis.feature:41</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>11:33:34.541 classpath:AutomationApis/AutomationApis.feature:41
+And match $ == Not found
+js failed:
+&gt;&gt;&gt;&gt;
+01: Not found
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:4 Expected ; but found found
+Not found
+    ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1898)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:184)
+
+classpath:AutomationApis/AutomationApis.feature:41
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2498060278.html">AutomationApis/AutomationApis.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1149411702.html">@Automation</a>
+</div>
+
+
+  <span class="lead-duration duration">0.284</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create booking</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com/booking&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.283</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>11:33:33.648 request:
+1 &gt; POST https://restful-booker.herokuapp.com/booking
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:33:33.930 response time in milliseconds: 281
+1 &lt; 500
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 21
+1 &lt; Etag: W/&quot;15-/6VXivhc2MKdLfIkLcUE47K6aH0&quot;
+1 &lt; Date: Fri, 09 Jun 2023 16:33:32 GMT
+1 &lt; Via: 1.1 vegur
+Internal Server Error
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request CreateBookingPost</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
+          <a>status</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details  in ">
+        <pre>status code was: 500, expected: 200, response time in milliseconds: 281, url: https://restful-booker.herokuapp.com/booking, response: 
+Internal Server Error
+classpath:AutomationApis/AutomationApis.feature:48</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>11:33:33.932 classpath:AutomationApis/AutomationApis.feature:48
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 281, url: https://restful-booker.herokuapp.com/booking, response: 
+Internal Server Error
+classpath:AutomationApis/AutomationApis.feature:48
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2498060278.html">AutomationApis/AutomationApis.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1149411702.html">@Automation</a>
+</div>
+
+
+  <span class="lead-duration duration">0.304</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-24">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Update booking booking</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-24" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-25">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-25" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com/booking/1&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.298</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>11:33:33.661 request:
+1 &gt; PUT https://restful-booker.herokuapp.com/booking/1
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:33:33.957 response time in milliseconds: 296
+1 &lt; 403
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 9
+1 &lt; Etag: W/&quot;9-PatfYBLj4Um1qTm5zrukoLhNyPU&quot;
+1 &lt; Date: Fri, 09 Jun 2023 16:33:32 GMT
+1 &lt; Via: 1.1 vegur
+Forbidden
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request CreateBookingPost</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header 'Accept' = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header 'Cookie' = 'token=abc123'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure connectTimeout = 1500000</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure readTimeout = 1500000</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-27">
+          <a>status</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details  in ">
+        <pre>status code was: 403, expected: 200, response time in milliseconds: 296, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+classpath:AutomationApis/AutomationApis.feature:63</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>11:33:33.964 classpath:AutomationApis/AutomationApis.feature:63
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 296, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+classpath:AutomationApis/AutomationApis.feature:63
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2498060278.html">AutomationApis/AutomationApis.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1149411702.html">@Automation</a>
+</div>
+
+
+  <span class="lead-duration duration">0.009</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Succes delete</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com/booking/1</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-31">
+          <a>js</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: &quot;https://restful-booker.herokuapp.com/booking/1
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:47 Missing close quote
+&quot;https://restful-booker.herokuapp.com/booking/1
+                                               ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+classpath:AutomationApis/AutomationApis.feature:69</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>11:33:33.678 classpath:AutomationApis/AutomationApis.feature:69
+Given url &quot;https://restful-booker.herokuapp.com/booking/1
+js failed:
+&gt;&gt;&gt;&gt;
+01: &quot;https://restful-booker.herokuapp.com/booking/1
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:47 Missing close quote
+&quot;https://restful-booker.herokuapp.com/booking/1
+                                               ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+classpath:AutomationApis/AutomationApis.feature:69
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == SuccesDelete</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

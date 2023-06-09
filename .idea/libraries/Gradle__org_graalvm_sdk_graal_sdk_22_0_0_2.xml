@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.graalvm.sdk:graal-sdk:22.0.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.graalvm.sdk/graal-sdk/22.0.0.2/3e6a30de6d2e3ea94ec5976ab37a850f96d78ee3/graal-sdk-22.0.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.graalvm.sdk/graal-sdk/22.0.0.2/96d13e497a1642b340fe365f5a32ce8272f948ad/graal-sdk-22.0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

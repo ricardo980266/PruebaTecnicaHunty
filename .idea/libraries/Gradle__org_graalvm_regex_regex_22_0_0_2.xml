@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.graalvm.regex:regex:22.0.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.graalvm.regex/regex/22.0.0.2/ab4d3753f60339648f5f6a9fa208df05b4a9dd6a/regex-22.0.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.graalvm.regex/regex/22.0.0.2/567415d8ab5b6fd56a5f177154221dfe08bc6569/regex-22.0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
